@@ -5,7 +5,7 @@ import re
 # function that will provide directions between two locations
 def get_directions(origin, destination, mode):
     # input parameters
-    APIkey = "AIzaSyD9UAKNxGwXjHKZOqsWSUhW-pAY_Pw2TTM"
+    APIkey = "apikey" # use your own API key from Google Cloud
     origin = origin
     destination = destination
     mode = mode
@@ -41,13 +41,14 @@ def get_directions(origin, destination, mode):
 
 
 # Main
-# origin = input('Starting location:')
-# destination = input('Final location:')
-# mode = input('Mode of transportation. Choose from driving, walking, bicycling, or transit:')
+origin = input('Starting location:')
+destination = input('Final location:')
+mode = input('Mode of transportation. Choose from driving, walking, bicycling, or transit:')
 
-origin = "Cary, NC"
-destination = "Raleigh"
-mode = "driving"
+# Test parameters
+#origin = "Durham, NC"
+#destination = "Raleigh"
+#mode = "driving"
 
 # run get_directions function
 get_directions(origin, destination, mode)
